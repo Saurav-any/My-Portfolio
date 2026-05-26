@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav | Fintech Data Analyst</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght=300;400;600;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-image: url('1000078590.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 255, 136, 0.15);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .glass-panel:hover {
+            border-color: rgba(0, 255, 136, 0.4);
+            transform: translateY(-5px);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        h1 span {
+            color: #00ff88; /* Neon Green matching the image */
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #a0aec0;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #00ff88;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* About & Experience Section */
+        .experience-highlight {
+            color: #00ff88;
+            font-weight: 600;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1));
+            gap: 15px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skill-tag {
+            background: rgba(0, 255, 136, 0.1);
+            color: #00ff88;
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Projects Section Visual Headers */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project-header-icon {
+            background: rgba(0, 255, 136, 0.05);
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            height: 80px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+            color: #00ff88;
+        }
+
+        .project-card h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .project-card p {
+            color: #a0aec0;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            min-height: 90px; /* Aligns buttons perfectly by giving equal text height */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00ff88;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 800;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #00cc6a;
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+        }
+
+        /* Certifications Section */
+        .cert-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-left: 4px solid #00ff88;
+        }
+
+        .cert-icon {
+            font-size: 3rem;
+            color: #00ff88;
+        }
+
+        .cert-details h3 {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: rgba(0, 255, 136, 0.2);
+            color: #00ff88;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Mobile Optimization and Background Fix */
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll; /* Fixes background image cropping/stretching on mobile browsers */
+                background-size: cover;
+                background-position: center center;
+            }
+            h1 { font-size: 2.5rem; }
+            .container { padding: 20px; }
+            .cert-card { flex-direction: column; align-items: flex-start; gap: 10px; }
+            .project-card p { min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="glass-panel">
+            <h1>Saurav Kumar</h1>
+            <p class="tagline">FinOps & Billing Analyst | SQL & Power BI Developer</p>
+        </header>
+
+        <!-- 1. Professional Profile -->
+        <section id="about">
+            <h2>Professional Profile</h2>
+            <div class="glass-panel">
+                <p>
+                    HackerRank Certified SQL Developer and Finance professional with <span class="experience-highlight">4 years of core accounting experience</span> specializing in invoicing, data validation, and financial reconciliation. Adept at building automated order-to-payout data pipelines using <span class="experience-highlight">SQL</span> and designing interactive business dashboards in <span class="experience-highlight">Power BI</span>. Proficient in managing complex accounting workflows utilizing <span class="experience-highlight">Advanced Excel</span> and <span class="experience-highlight">Focus Billing software</span>. Seeking to deploy this combined financial and technical skillset in a <span class="experience-highlight">FinOps / Billing Analyst role</span>.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. Certifications & Upskilling -->
+        <section id="certifications">
+            <h2>Certifications & Upskilling</h2>
+            <div class="glass-panel cert-card">
+                <div class="cert-icon">
+                    <i class="fab fa-hackerrank"></i>
+                </div>
+                <div class="cert-details">
+                    <h3>HackerRank SQL Certification</h3>
+                    <p>Advanced SQL problem solving, complex queries, and technical data manipulation.</p>
+                    <span class="status-badge"><i class="fas fa-check-circle"></i> Verified Certificate</span>
+                    <br>
+                    <a href="https://www.hackerrank.com/certificates/f89ca0f8caf3" target="_blank" class="btn">Verify Certificate</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Analytical Projects -->
+        <section id="projects">
+            <h2>Analytical Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Power BI Card -->
+                <div class="glass-panel project-card">
+                    <div class="project-header-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Power BI Dashboard</h3>
+                    <p>Advanced financial and business intelligence analytics dashboard designed to visualize complex datasets, track key performance metrics, and deliver actionable insights for strategic decision-making.</p>
+                    <a href="https://saurav-any.github.io/POWER-BI-PROJECT/" target="_blank" class="btn">View Project Details</a>
+                </div>
+
+                <!-- SQL Card -->
+                <div class="glass-panel project-card">
+                    <div class="project-header-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>SQL Financial Analytics Project</h3>
+                    <p>Deep-dive data analysis utilizing complex relational database queries, optimization techniques, and advanced data manipulation to extract financial insights and optimize system workflows.</p>
+                    <a href="https://saurav-any.github.io/SQL-ANALYTICS-PROJECT/" target="_blank" class="btn">View Project Details</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- 4. Core Competencies -->
+        <section id="skills">
+            <h2>Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-tag"><i class="fas fa-chart-bar"></i> Power BI</div>
+                <div class="skill-tag"><i class="fas fa-database"></i> SQL</div>
+                <div class="skill-tag"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-tag"><i class="fas fa-file-excel"></i> Advanced Excel</div>
+                <div class="skill-tag"><i class="fab fa-html5"></i> HTML5</div>
+                <div class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</div>
+                <div class="skill-tag"><i class="fas fa-chart-line"></i> Financial Analytics</div>
+                <div class="skill-tag"><i class="fas fa-file-invoice-dollar"></i> Billing Systems</div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
